@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact Us - Transistor Radios</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Transistor Tunes</a></div>
+        <a href="feedback.html" class="cta-button" id="feed">Give Feedback</a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions or feedback? Reach out to us!</p>
+
+    <form id="contactForm" onsubmit="submitForm(event)">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="contact.js"></script>
+
+</body>
+</html>

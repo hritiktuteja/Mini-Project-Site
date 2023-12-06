@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shop.css">
+  <title>Transistor Radios Products</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Transistor Tunes</a></div>
+        <a href="feedback.html" class="cta-button" id="feed">Give Feedback</a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <div class="container">
+    <h1>Transistor Radios Products</h1>
+
+    <div class="product" onclick="showDetails(1)">
+      <img src="radioimg4.png" alt="Transistor Radio 1">
+      <h2>Vintage Classic</h2>
+      <p>Discover the beauty of this classic transistor radio with wooden casing.</p>
+      <button class="details-btn">View Details</button>
+    </div>
+
+    <div class="product" onclick="showDetails(2)">
+      <img src="4.png" alt="Transistor Radio 2">
+      <h2>Modern Portable</h2>
+      <p>Experience the convenience of a compact and portable transistor radio for on-the-go listening.</p>
+      <button class="details-btn">View Details</button>
+    </div>
+
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Product Details</h2>
+        <p id="modalDescription">Detailed information about the selected product.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="shop.js"></script>
+  <footer>
+    <p>&copy; 2023 Transistor Tunes. All rights reserved.</p>
+
+</footer>
+</body>
+</html>
